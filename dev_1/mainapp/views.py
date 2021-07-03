@@ -5,7 +5,7 @@ import datetime
 def index(request):
     date = datetime.date.now()
     context = {
-       'date': date.strtime("%Y-%m-%d"),
+       'date': date.strtime("%d-%m"),
        'page_title': 'Дата'
    }
     return render(request, 'mainapp/index.html', context)
