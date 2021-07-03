@@ -1,0 +1,14 @@
+{% extends 'authapp/base.html' %}
+
+{% block content %}
+    <div class="login-form">
+       <div class="form-title">Вход в систему</div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit"
+                   class="btn btn-success form-control"
+                   value="войти">
+        </form>
+    </div>
+{% endblock %}

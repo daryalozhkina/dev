@@ -1,0 +1,6 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+    <h2>Дата:</h2>
+        {{ date | datetime:"d-m-Y" }}
+{% endblock %}
